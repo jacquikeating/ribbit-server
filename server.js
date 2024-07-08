@@ -13,8 +13,8 @@ function readFrogs() {
 
 console.log(readFrogs());
 
-app.get("/healthcheck", (_req, res) => {
-  res.send("If you're reading this, the server is running!");
+app.get("/", (_req, res) => {
+  res.send(`<h1>If you're reading this, the server is running!</h1>`);
 });
 
 app.use(cors());
